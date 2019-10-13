@@ -32,12 +32,12 @@ function armarHeader() {
 
     <ul class="botonesNav">
       <li><a id="botonHome">Home</a></li>
-      <li><a id="botonHistoria">Nuestra Historia</a></li>
-      <li><a id="botonProducto">Productos y Servicios</a></li>
-      <li><a id="botonCertificaciones">Certificaciones</a>
+      <li><a id="botonHistoria">About</a></li>
+      <li><a id="botonProducto">Products and Services</a></li>
+      <li><a id="botonCertificaciones">Certifications</a>
         <ul class="subMenu">
-          <li><a id="botonRUMP" >Inscripción RUMP Ministerio de Producción</a></li>
-          <li><a id="botonINTI" >Reparador Auditado por Meteología Legal INTI</a></li>
+          <li><a id="botonRUMP" >RUMP Registration Minsitry of Production</a></li>
+          <li><a id="botonINTI" >Audited Repairman by INTI Legarl Meotology</a></li>
         </ul>
       </li>
       <li><a id="botonContacto">Contacto</a></li>
@@ -54,7 +54,7 @@ function armarFooter() {
   contenedorFooter.innerHTML = `
     <div class="textoFooter">
     <h3>
-      Contacto
+      Contact
     </h3>
     <p>
       Tel: + 54 9 11 3566 4142
@@ -66,13 +66,13 @@ function armarFooter() {
       Zapiola 1144, San Justo
     </p>
     <p>
-      Partido de la Matanza
+    La Matanza District
     </p>
   </div>
 
   <div class="textoFooter">
     <p>
-      CP 1754- Provincia de Buenos Aires
+    Zip Code 1754- Buenos Aires Province. 
     </p>
   </div>
     `;
@@ -84,16 +84,16 @@ function cambiarHome() {
   mainContenedorGeneral.innerHTML = `
     <div class="textoSectionHome">
     <h1>
-      Fabricación,
+      Manufacturing,
     </h1>
     <h1>
-      Calibración y Reparación
+      Calibration and repair
     </h1>
     <h1>
-      de Medidas de Capacidad
+      of capacity measures
     </h1>
     <p>
-      Asesoramiento de normas de calidad ISO
+      Advice on ISO quality standards
     </p>
 
     <div class="logoSection">
@@ -119,18 +119,20 @@ function cambiarAHistoria() {
 </div>
 <div class="textoSection2Historia">
     <p>
-        Somos una organización joven encabezada por dos socios,
-        combinando conocimientos en sistemas de calidad y reparación de
-        instrumentos de medición.
+        We are a young organization headed by two partners,
+        which combines knowledge in quality systems and 
+        the repair of measuring instruments
     </p>
     <p>
-        Contamos con amplia trayectoria en empresas líderes automotrices
-        y fábricas de instrumentos de medición. Además de amplíos
-        conocmientos en robótica y en máquinas de medir.
+        We have extensive experience in the main automotive 
+        companies and factories of measuring instruments. 
+        In addition to extensive knowledge in robotics 
+        and measuring machines.
     </p>
     <p>
-        El desarrollo de las medidas de capacidad es una combinación de
-        Diseño, Sustentabilidad y desarrollo profesional de Nosotros.
+        The development of capacity measures is a combination
+        of Design, Sustainability and Professional
+        Development of Us.
     </p>
 </div>
     `;
@@ -143,13 +145,13 @@ function cambiarProducto() {
   mainContenedorGeneral.innerHTML = `
     <div class="textoSectionProductos">
     <h2>
-        Producto
+        Product
     </h2>
     <p>
-        Marca: VIANO
+        Brand: VIANO
     </p>
     <p>
-        Modelo: DAMAR
+        Model: DAMAR
     </p>
 </div>
 
@@ -175,20 +177,19 @@ function cambiarRUMP() {
   mainContenedorGeneral.innerHTML = `
     <div class="textoSectionRUMP">
     <h2>
-        Inscripción RUMP 
+    RUMP Registration 
     </h2>
     <p>
-        Ministerio de Producción
+    Ministry of Production
     </p>
 </div>
 <div class="textoSection2RUMP">
     <p>
-        Viano, Medida de capacidad se encuentra
-        inscripto como reparador de surtidores y como
-        fabricante y reparador de medidas de capacidad
-        bajo el número de R.U.M.P. RL-2018 de acuerdo a
-        los requisitos establecidos por el Ministerio
-        de Producción de la República Argentina. 
+    Viano, Measurement of capacity is registered as supplier 
+    repairman and asmanufacturer and repairer of capacity 
+    measurements under the number of R.U.M.P. RL-2018 
+    according to the requirements established by the Ministry
+    of Production of the Argentine Republic.  
     </p>
 
 </div>
@@ -202,21 +203,19 @@ function cambiarINTI() {
   mainContenedorGeneral.innerHTML = `
     <div class="textoSectionINTI">
     <h2>
-        Reparador Auditado
+    Audited Repairman
     </h2>
     <p>
-        por Meteología legal INTI 
+    by INTI Legal Meteology 
     </p>
 </div>
 <div class="textoSection2INTI">
     <p>
-        Viano, Medidas de Capacidad se encuentra
-        habilitado por Meteología Legal del Instituto
-        Nacional de Tecnología Industrial como
-        reparador de surtidores y medidas de
-        capacidad habiendo cumplido con la auditoría
-        del sistema de gestión de calidad y procesos
-        técnicos que establece el I.N.T.I.
+    Viano, Capacity Measures is enabled by the Legal Meteology
+    of the Institute. National Industrial Technology as a 
+    repairer of suppliers and capacity measures that have 
+    complied with the audit of the system and quality 
+    management processes. Technicians established by the I.N.T.I.
     </p>
 </div>
     `;
@@ -234,17 +233,17 @@ function cambiarContacto() {
 </div>
 <div class="textoSection2Contacto">
     <p>
-        Dirección: Zapiola 1144
+        Address: Zapiola 1144
     </p>
     <p>
-        San Justo - Partido de la Matanza
+        La Matanza District - San Justo
     </p>
     <p>
-        CP 1754- Provincia de Buenos Aires
+    Zip Code 1754- Buenos Aires Province.
     </p>
     <div class="textoAtencionAlCliente">
         <h4>
-            Atención al Cliente
+            Call Center
         </h4>
         <p>
             Tel: + 54 9 11 3566 4142
@@ -254,10 +253,10 @@ function cambiarContacto() {
 
 <form action="/my-handling-form-page" method="post">
     <div>
-        <label for="name">Nombre*</label>
-        <!--El elemento label representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta.-->
+        <label for="name">Name*</label>
+        
         <input type="text" id="name" />
-        <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.-->
+        
     </div>
     <div>
         <label for="mail">Email*</label>
@@ -270,7 +269,7 @@ function cambiarContacto() {
 
     <div class="button">
         <!--Botón sin un comportamiento específico.-->
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
     </div>
 </form>
     `;
