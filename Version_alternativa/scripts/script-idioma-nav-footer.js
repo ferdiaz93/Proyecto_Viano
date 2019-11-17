@@ -6,6 +6,8 @@ const MENU_CERTIFICACIONES = document.getElementById("certificaciones");
 const MENU_RUMP = document.getElementById("rump");
 const MENU_INTI = document.getElementById("inti");
 const MENU_CONTACTO = document.getElementById("contacto");
+const MENU_ESPAÑOL = document.getElementById("español");
+const MENU_INGLES = document.getElementById("ingles");
 //Footer
 const FOOTER_CONTACTO = document.getElementById("footer-contacto");
 const FOOTER_PARTIDO = document.getElementById("footer-partido");
@@ -23,6 +25,9 @@ function cambiarIdiomaNavFooter(idioma) {
             MENU_RUMP.innerText = "RUMP Registration Minsitry of Production";
             MENU_INTI.innerText = "Audited Repairman by INTI Legarl Meotology";
             MENU_CONTACTO.innerText = "Contact";
+            MENU_ESPAÑOL.innerText = "Spanish";
+            MENU_INGLES.innerText = "English";
+
 
             FOOTER_CONTACTO.innerText = "Contact";
             FOOTER_PARTIDO.innerText = "La Matanza District";
