@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; TIPOGRAFÍA: RALEWAY */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400&display=swap');
+/*font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+*{
+    padding: 0; /* espacio entre el contenido y el contenedor*/
+    margin: 0; /* establece el margen para los cuatro lados*/
+}
+
+
+
+
+.menuNav{
+    width: 100%;
+    background-color: navy;
+    display: flex; /*sirve para que el contenido se pueda acomodar o estirar y por defecto en row (en fila) */
+    justify-content: space-evenly; /*deja un espacio entre cada items (ver en pag css-tricks.com)*/
+    align-items: center; /*lo centra pero verticalmente (ver en pag css-tricks.com)*/
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+
+.botonesNav{
+    display: flex;
+    flex-grow: 2;/*hace que se estire el item (ver en pag css-tricks.com)*/
+    justify-content: center; /*lo que esté en el medio lo va a centrar, lo deja si o si en el medio)*/
+    list-style: none; /*elimina los puntos (bullets) de la lista */
+    padding: 2%;
+}
+
+.botonesNav li{
+    margin: 2%;
+}
+
+.botonesNav a{
+    text-decoration: none; /*elimina el subrayado de los links*/
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+/* Contenedor de imagen 
+A este contenedor siempre generalmente le ponemos un width y height */
+.logos {
+    width: 10%;
+    height: 10%;
+    padding-left: 5%;
+   
+}
+
+/* Ctrl k C para hacer comentarios. 
+A las imágenes ponerle siempre un widht de 100% y height auto para que se ajusten a la página. 
+El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
+.logos img {
+    width: 100%;
+    height: auto;
+}
+
+.logo2 {
+    padding-right: 5%;
+}
+
+.section {
+    width: 100%;
+    
+}
+
+.textoSection {
+    color: #000769;
+    padding: 3%;
+    height: auto;
+    padding-left: 15%; /*se corre a la derecha*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+}
+
+/*.textoSection p {
+    color: rgb(2, 2, 71);
+    font-family: 'Oswald', sans-serif;
+    font-size: 53px;
+    
+    
+}
+
+.textoSection2 {
+    padding-left: 15%;
+    color: rgb(27, 27, 27);
+    width: 5%;
+    font-family: 'Noto Sans', sans-serif;
+    padding-bottom: 6%; 
+    font-size: 18px;
+    
+
+}
+*/
+
+.textoSection2 p {
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 15%;
+    color: rgb(43, 42, 42);
+   
+}
+
+
+.textoAtencionAlCliente {
+
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 15%;
+    color: #000769;
+    padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
+
+}
+
+form {
+    /* Sólo para centrar el formulario a la página */
+    /* margin: 0 auto; */
+    width: 400px;
+    /* Para ver el borde del formulario */
+    padding-left: 15%;
+    border-radius: 1em;
+    font-family: 'Noto Sans', sans-serif;
+}
+/* Luego, agreguemos algo de espacio entre cada uno de los widgets del formulario: */
+
+form div + div {
+    margin-top: 1em;
+}
+
+/* labels. en el mismo tamaño y alineados del mismo lado. En este caso */
+label {
+    /* Para asegurarse que todos los labels tienen el mismo tamaño y están alineados correctamente */
+    display: inline-block;
+    width: 90px;
+    text-align: right; /*right:
+    /* border: 1px solid #CCC; */
+    color: #000769;
+
+}
+
+input, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen las mismas propiedades de fuente
+       Por defecto, las areas de texto tienen una fuente con monospace */
+    font: 1em sans-serif;
+
+    /* Para darle el mismo tamaño a todos los campos de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para armonizar el look&feel del borde en los campos de texto */
+    border: 1px solid #999;
+
+}
+
+input:focus, textarea:focus {
+    /* Para dar un pequeño destaque en elementos activos*/
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinear campos de texto multilínea con sus labels */
+    vertical-align: top;
+
+    /* Para dar suficiente espacio para escribir texto */
+    height: 5em;
+
+    /* Para permitir a los usuarios cambiar el tamaño de cualquier textarea verticalmente
+        No funciona en todos los navegadores */
+    resize: vertical;
+}
+
+.button {
+    /* Para posicionar los botones a la misma posición que los campos de texto */
+    padding-left: 343px; /* mismo tamaño a todos los elementos label */
+    padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
+    
+}
+button {
+    /* Este margen extra representa aproximadamente el mismo espacio que el espacio
+       entre los labels y sus campos de texto */
+    margin-left: .5em;
+    background-color: #000769;
+    font: normal normal normal 15px/1.4em raleway,sans-serif;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+
+.footer {
+    background-color: navy;
+    width: 100%; 
+    padding-bottom: 1%; /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 1%; /* Arriba. espacio entre el contenido y el contenedor*/
+     
+}
+
+.textoFooter {
+    color: white;
+    padding: 1%;
+    height: auto;
+    padding-left: 5%; /*se corre a la derecha*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+
+} 
