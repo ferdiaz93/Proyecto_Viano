@@ -12,7 +12,7 @@
 
   <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
 
-  <title>Hello, world!</title>
+  <title>Viano</title>
 </head>
 
 <body>
@@ -28,16 +28,16 @@
       <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
       <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
           PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
-      <li><a href="./home.html">Home</a></li>
-      <li><a href="./nuestraHistoria.html">Nuestra Historia</a></li>
-      <li><a href="./productos.html">Productos y Servicios</a></li>
-      <li><a href="">Certificaciones</a>
+      <li><a id="inicio" href="./home.html">Inicio</a></li>
+      <li><a id="nuestra-historia" href="./nuestraHistoria.html">Nuestra Historia</a></li>
+      <li><a id="productos-servicios" href="./productos.html">Productos y Servicios</a></li>
+      <li><a id="certificaciones" href="">Certificaciones</a>
         <ul class="subMenu">
-          <li><a href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
-          <li><a href="./certifRump.html">Reparador Auditado por Meteología Legal</a></li>
+          <li><a id="rump" href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
+          <li><a id="inti" href="./certiINTI.html">Reparador Auditado por Meteología Legal</a></li>
         </ul>
       </li>
-      <li><a href="./contacto.html">Contacto</a></li>
+      <li><a id="contacto" href="./contacto.html">Contacto</a></li>
     </ul>
 
     <div class="logo2">
@@ -50,21 +50,12 @@
   <section class="section">
 
     <div class="textoSection">
-      <h1>
-        Fabricación,
-      </h1>
-      <h1>
-        Calibración y Reparación
-      </h1>
-        <h1>
-        de Medidas de Capacidad
-        </h1>
-      <!-- <h2>
-        Fabricación,<br>
-        Calibración y Reparación <br>
-        de Medidas de Capacidad
-      </h2> -->
       <p>
+        <h2 id="fabricacion">Fabricación,</h2>
+        <h2 id="calibracion">Calibración y Reparación</h2>
+        <h2 id="medidas">de Medidas de Capacidad</h2>
+      </p>
+      <p id="asesoramiento">
         Asesoramiento de normas de calidad ISO
       </p>
 
@@ -77,7 +68,7 @@
   <footer class="footer">
 
     <div class="textoFooter">
-      <h3>
+      <h3 id="footer-contacto">
         Contacto
       </h3>
       <p>
@@ -89,18 +80,22 @@
       <p>
         Zapiola 1144, San Justo
       </p>
-      <p>
+      <p id="footer-partido">
         Partido de la Matanza
       </p>
     </div>
 
     <div class="textoFooter">
-      <p>
+      <p id="footer-cp">
         CP 1754- Provincia de Buenos Aires
       </p>
     </div>
 
   </footer>
+
+  <script src="../../scripts/script-idioma-nav-footer.js"></script>
+  <script src="../../scripts/script-body-home.js"></script>
+
 </body>
 
 </html>
