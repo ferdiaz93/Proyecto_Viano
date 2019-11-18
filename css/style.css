@@ -12,6 +12,13 @@
 }
 
 
+body{
+    background-image: url('../img/fondoViano.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed; /*scroll de la imagen*/
+}
+
 .menuNav{
     width: 100%;
     background-color: navy;
@@ -38,7 +45,6 @@
 
 
 .botonesNav a{
-    cursor: pointer;
     text-decoration: none; /*elimina el subrayado de los links*/
     color: white;
     font-family: 'Noto Sans', sans-serif;
@@ -64,6 +70,44 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
 .logo2 {
     padding-right: 5%;
 }
+
+
+
+
+/* BODY */
+.section {
+    width: 100%;
+    
+}
+
+.textoSection {
+    color: white;
+    padding: 15%;
+    height: auto;
+    padding-left: 5%; /*se corre a la derecha*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+}
+
+.textoSection p {
+    color: navy;
+    font-size: 20px;
+    
+}
+
+.logoSection img {
+    width: 100%;
+    height: auto;
+}
+
+.logoSection {
+        width: 20%;
+        height: 20%;
+        padding-left: 5%;
+        padding: 4%;
+        padding-left: 8%; /*se corre a la derecha*/
+}
+
 
 .footer {
     background-color: navy;
@@ -112,57 +156,24 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
     opacity: 1;
 }
 
+#selector-idiomas{
+    width: 85px;
+    height: 30px;
+}
 
-
-
-/* ACA ARRANCA MI BODY */
-
-
-
-.section {
+.section-home {
     width: 100%;
-    
 }
 
-.textoSectionHome {
-    color: white;
-    padding: 15%;
-    height: auto;
-    padding-left: 5%; /*se corre a la derecha*/
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 22px;
-}
 
-.textoSectionHome p {
-    color: navy;
-    font-size: 20px;
-    
-}
+/* HISTORIA */
 
-.logoSection img {
+.section-general{
     width: 100%;
-    height: auto;
+    background-color: white;
 }
 
-.logoSection {
-        width: 20%;
-        height: 20%;
-        padding-left: 5%;
-        padding: 4%;
-        padding-left: 8%; /*se corre a la derecha*/
-}
-
-body{
-    background-image: url('../img/fondoViano.jpg');
-    background-position: center;
-    background-size: 100% 100%;
-    background-attachment: fixed; /*scroll de la imagen*/
-}
-
-
-/* NUESTRA HISTORIA */
-
-.textoSectionHistoria {
+.textoSection-historia {
     color: #000769;
     padding: 3%;
     height: auto;
@@ -171,35 +182,33 @@ body{
     font-size: 33px;
 }
 
-.textoSectionHistoria p {
-    color: #000769;
-    font-family: 'Oswald', sans-serif;
+.textoSection-historia p {
+    color:#000769;
     font-size: 53px;
     font-weight: lighter;
     
-    
 }
 
-.textoSection2Historia {
+.textoSection2-historia {
     padding-left: 15%;
     color: rgb(43, 42, 42);
-    width: 45%;
+    width: 40%;
     font-family: 'Noto Sans';
     padding-bottom: 6%; 
     font-size: 18px;
 
 }
 
-.textoSection2 p {
+.textoSection2-historia p {
     padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
-
 }
 
 
 /* PRODUCTOS */
 
-.textoSectionProductos {
+
+.textoSection-producto {
     color: #000769;
     padding: 3%;
     height: auto;
@@ -208,11 +217,26 @@ body{
     font-size: 33px;
 }
 
-.textoSectionProductos p {
+.textoSection-producto p {
     color: #000769;
     font-family: 'Oswald', sans-serif;
     font-size: 43px;
     font-weight: lighter;
+}
+
+.textoSection2-producto {
+    padding-left: 15%;
+    color: rgb(43, 42, 42);
+    width: 25%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+
+}
+
+.textoSection2-producto p {
+    padding-bottom: 1%; /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
+
 }
 
 .productoViano img {
@@ -226,8 +250,6 @@ body{
     padding-left: 13%;
     
 }
-
-
 .carruselViano img {
     width: 100%;
     height: auto;
@@ -241,11 +263,9 @@ body{
     
 }
 
-
 /* RUMP */
 
-
-.textoSectionRUMP {
+.textoSection-rump {
     color: #000769;
     padding: 3%;
     height: auto;
@@ -254,7 +274,7 @@ body{
     font-size: 33px;
 }
 
-.textoSectionRUMP p {
+.textoSection-rump p {
     color: #000769;
     font-family: 'Oswald', sans-serif;
     font-size: 53px;
@@ -263,7 +283,7 @@ body{
     
 }
 
-.textoSection2RUMP {
+.textoSection2-rump {
     padding-left: 15%;
     color: rgb(43, 42, 42);
     width: 45%;
@@ -273,7 +293,7 @@ body{
 
 }
 
-.textoSection2RUMP p {
+.textoSection2-rump p {
     padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
 
@@ -281,8 +301,7 @@ body{
 
 /* INTI */
 
-
-.textoSectionINTI {
+.textoSection-inti {
     color: #000769;
     padding: 3%;
     height: auto;
@@ -292,7 +311,7 @@ body{
     
 }
 
-.textoSectionINTI p {
+.textoSection-inti p {
     color: #000769;
     font-family: 'Oswald', sans-serif;
     font-size: 53px;
@@ -301,7 +320,7 @@ body{
 }
 
 
-.textoSection2INTI {
+.textoSection2-inti {
     padding-left: 15%;
     color: rgb(43, 42, 42);
     width: 45%;
@@ -311,17 +330,16 @@ body{
     
 }
 
-.textoSection2INTI p {
+.textoSection2-inti p {
     padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
 
 }
 
 
-
 /* CONTACTO */
 
-.textoSectionContacto {
+.textoSection-contacto {
     color: #000769;
     padding: 3%;
     height: auto;
@@ -330,17 +348,13 @@ body{
     font-size: 33px;
 }
 
-
-.textoSection2Contacto p {
+.textoSection2-contacto p {
     font-family: 'Noto Sans', sans-serif;
     padding-left: 15%;
     color: rgb(43, 42, 42);
    
 }
-
-
 .textoAtencionAlCliente {
-
     font-family: 'Noto Sans', sans-serif;
     padding-left: 15%;
     color: #000769;
@@ -348,6 +362,7 @@ body{
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
 
 }
+
 
 form {
     /* Sólo para centrar el formulario a la página */
@@ -425,4 +440,47 @@ button {
     cursor: pointer;
     margin: 0;
     
+}
+
+.section-general-certificaciones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.img-certificaciones{
+    width: 100%;
+}
+
+.contenedor-img{
+    width: 450px;
+}
+#img-inti{
+    width: 250px;
+}
+.contenedor-certificaciones{
+    width: 850px;
+}
+
+.textoSection-certificaciones {
+    display: flex;
+    color: #000769;
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+    margin-bottom: 60px;
+}
+
+.textoSection-certificaciones p {
+    color:#000769;
+    font-size: 53px;
+    font-weight: lighter;
+    
+}
+
+.contenedor-fila{
+    width: 600px;
 }
