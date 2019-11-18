@@ -3,6 +3,7 @@ const BODY_PARTIDO = document.getElementById("partido");
 const BODY_PROVINCIA = document.getElementById("provincia");
 const BODY_ATENCION = document.getElementById("atencion");
 const BODY_NOMBRE = document.getElementById("nombre");
+const BODY_EMAIL = document.getElementById("email");
 const BODY_MENSAJE = document.getElementById("mensaje");
 const BODY_ENVIAR = document.getElementById("enviar");
 
@@ -29,8 +30,9 @@ function cambiarIdiomaBodyContacto(idioma) {
             BODY_PROVINCIA.innerText = "Zip Code 1754- Buenos Aires Province.";
             BODY_ATENCION.innerText = "Call Center";
             BODY_NOMBRE.innerText = "Name";
+            BODY_EMAIL.innerText = "Your email"
             BODY_MENSAJE.innerText = "Message";
-            BODY_ENVIAR.innerText = "Send";
+            BODY_ENVIAR.value = "Send";
             break;
 
         case "esp":
@@ -39,8 +41,9 @@ function cambiarIdiomaBodyContacto(idioma) {
             BODY_PROVINCIA.innerText = "CP 1754- Provincia de Buenos Aires";
             BODY_ATENCION.innerText = "Atención al Cliente";
             BODY_NOMBRE.innerText = "Nombre";
+            BODY_EMAIL.innerText = "Tu email"
             BODY_MENSAJE.innerText = "Mensaje";
-            BODY_ENVIAR.innerText = "Enviar";
+            BODY_ENVIAR.value = "Enviar";
 
     }
 }
