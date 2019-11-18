@@ -8,12 +8,25 @@ const MENU_INTI = document.getElementById("inti");
 const MENU_CONTACTO = document.getElementById("contacto");
 const MENU_ESPAÑOL = document.getElementById("español");
 const MENU_INGLES = document.getElementById("ingles");
+const MENU_SELECT_IDIOMA = document.getElementById("selector-idiomas");
 //Footer
 const FOOTER_CONTACTO = document.getElementById("footer-contacto");
 const FOOTER_PARTIDO = document.getElementById("footer-partido");
 const FOOTER_CP = document.getElementById("footer-cp");
 
-
+if (localStorage.getItem("idioma") !== null || localStorage.getItem("idioma") !== undefined) {
+    MENU_SELECT_IDIOMA.value = localStorage.getItem("idioma");
+    cambiarIdiomaNavFooter(MENU_SELECT_IDIOMA.value);
+}
+MENU_SELECT_IDIOMA.addEventListener("change", (e) => {
+    if (MENU_SELECT_IDIOMA.value == "eng") {
+        localStorage.setItem("idioma", "eng");
+        cambiarIdiomaNavFooter("eng");
+    } else if (MENU_SELECT_IDIOMA.value == "esp") {
+        localStorage.setItem("idioma", "esp");
+        cambiarIdiomaNavFooter("esp")
+    }
+})
 
 function cambiarIdiomaNavFooter(idioma) {
     switch (idioma) {

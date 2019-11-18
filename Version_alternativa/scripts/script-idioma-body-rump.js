@@ -3,6 +3,21 @@ const BODY_MINISTERIO = document.getElementById("ministerio");
 const BODY_PARRAFO = document.getElementById("parrafo");
 
 
+if (localStorage.getItem("idioma") !== null || localStorage.getItem("idioma") !== undefined) {
+    MENU_SELECT_IDIOMA.value = localStorage.getItem("idioma");
+    cambiarIdiomaBodyRump(MENU_SELECT_IDIOMA.value);
+}
+MENU_SELECT_IDIOMA.addEventListener("change", (e) => {
+    if (MENU_SELECT_IDIOMA.value == "eng") {
+        localStorage.setItem("idioma", "eng");
+        cambiarIdiomaBodyRump("eng");
+    } else if (MENU_SELECT_IDIOMA.value == "esp") {
+        localStorage.setItem("idioma", "esp");
+        cambiarIdiomaBodyRump("esp")
+    }
+})
+
+
 function cambiarIdiomaBodyRump(idioma) {
     switch (idioma) {
         case "eng":

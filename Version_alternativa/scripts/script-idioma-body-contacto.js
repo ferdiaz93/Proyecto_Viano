@@ -6,6 +6,20 @@ const BODY_NOMBRE = document.getElementById("nombre");
 const BODY_MENSAJE = document.getElementById("mensaje");
 const BODY_ENVIAR = document.getElementById("enviar");
 
+if (localStorage.getItem("idioma") !== null || localStorage.getItem("idioma") !== undefined) {
+    MENU_SELECT_IDIOMA.value = localStorage.getItem("idioma");
+    cambiarIdiomaBodyContacto(MENU_SELECT_IDIOMA.value);
+}
+MENU_SELECT_IDIOMA.addEventListener("change", (e) => {
+    if (MENU_SELECT_IDIOMA.value == "eng") {
+        localStorage.setItem("idioma", "eng");
+        cambiarIdiomaBodyContacto("eng");
+    } else if (MENU_SELECT_IDIOMA.value == "esp") {
+        localStorage.setItem("idioma", "esp");
+        cambiarIdiomaBodyContacto("esp")
+    }
+})
+
 
 function cambiarIdiomaBodyContacto(idioma) {
     switch (idioma) {
