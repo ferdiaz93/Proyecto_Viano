@@ -7,7 +7,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
 
   <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
@@ -21,7 +21,7 @@
       <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
                 Atributos-->
       <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
-      <img src="../../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
+      <img src="../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
     </div>
 
     <ul class="botonesNav">
@@ -31,7 +31,7 @@
       <li><a id="inicio" href="./home.html">Inicio</a></li>
       <li><a id="nuestra-historia" href="./nuestraHistoria.html">Nuestra Historia</a></li>
       <li><a id="productos-servicios" href="./productos.html">Productos y Servicios</a></li>
-      <li><a id="certificaciones" href="">Certificaciones</a>
+      <li><a id="certificaciones" href="./certificaciones.html">Certificaciones</a>
         <ul class="subMenu">
           <li><a id="rump" href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
           <li><a id="inti" href="./certiINTI.html">Reparador Auditado por Meteología Legal</a></li>
@@ -47,57 +47,29 @@
 
     <div class="logo2">
       <!--el div abarca por default el ancho de la página-->
-      <img src="../../img/isologoblanco.png" alt="Logo ISO">
+      <img src="../img/isologoblanco.png" alt="Logo ISO">
     </div>
   </nav>
 
   <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
   <section class="section-general">
 
-    <div class="textoSection-contacto">
-      <h2>VIANO</h2>
+    <div class="textoSection-rump">
+      <h2 id="inscripcion">Inscripción RUMP</h2>
+      <p id="ministerio">Ministerio de Producción</p>
     </div>
-    <div class="textoSection2-contacto">
-      <p id="direccion">Dirección: Zapiola 1144</p>
-      <p id="partido">San Justo - Partido de la Matanza</p>
-      <p id="provincia">CP 1754- Provincia de Buenos Aires</p>
-      <div class="textoAtencionAlCliente">
-        <h4 id="atencion">Atención al Cliente</h4>
-        <p>Tel: + 54 9 11 3566 4142</p>
-      </div>
+    <div class="textoSection2-rump">
+      <p id="parrafo">
+        Viano, Medida de capacidad se encuentra
+        inscripto como reparador de surtidores y como
+        fabricante y reparador de medidas de capacidad
+        bajo el número de R.U.M.P. RL-2018 de acuerdo a
+        los requisitos establecidos por el Ministerio
+        de Producción de la República Argentina. 
+      </p>
     </div>
-
-    <!-- FORMULARIO: <form>, <label>, <input>, <textarea>, y <button>.
-      form define formalmente un formulario. Es un contenedor. 
-        considera una buena práctica: atributos action y method se encuentren presentes.
-      El atributo "action" define la locación (una URL) desde donde la información 
-      recolectada por el formulario debería enviarse.
-      El atributo "method" define con que método HTTP se enviará la información 
-      (puede ser "get" o "post"). -->
-    <form action="/my-handling-form-page" method="post">
-      <div>
-        <label id="nombre" for="name">Nombre*</label>
-        <!--El elemento label representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta.-->
-        <input type="text" id="name" />
-        <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.-->
-      </div>
-      <div>
-        <label for="mail">Email*</label>
-        <input type="email" id="mail" />
-      </div>
-      <div>
-        <label id="mensaje" for="msg">Mensaje*</label>
-        <textarea id="msg"></textarea>
-      </div>
-
-      <div class="button">
-        <!--Botón sin un comportamiento específico.-->
-        <button id="enviar" type="submit">Enviar</button>
-      </div>
-    </form>
 
   </section>
-
   <footer class="footer">
 
     <div class="textoFooter">
@@ -125,9 +97,9 @@
     </div>
 
   </footer>
+  <script src="../scripts/script-idioma-nav-footer.js"></script>
+  <script src="../scripts/script-idioma-body-rump.js"></script>
 
-  <script src="../../scripts/script-idioma-nav-footer.js"></script>
-  <script src="../../scripts/script-idioma-body-contacto.js"></script>
 </body>
 
 </html>

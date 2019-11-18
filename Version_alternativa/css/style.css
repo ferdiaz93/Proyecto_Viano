@@ -441,3 +441,46 @@ button {
     margin: 0;
     
 }
+
+.section-general-certificaciones{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.img-certificaciones{
+    width: 100%;
+}
+
+.contenedor-img{
+    width: 450px;
+}
+#img-inti{
+    width: 250px;
+}
+.contenedor-certificaciones{
+    width: 850px;
+}
+
+.textoSection-certificaciones {
+    display: flex;
+    color: #000769;
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+    margin-bottom: 60px;
+}
+
+.textoSection-certificaciones p {
+    color:#000769;
+    font-size: 53px;
+    font-weight: lighter;
+    
+}
+
+.contenedor-fila{
+    width: 600px;
+}
