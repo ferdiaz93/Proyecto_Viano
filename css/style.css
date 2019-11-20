@@ -190,9 +190,10 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
 }
 
 .textoSection2-historia {
+    display: flex;
+    justify-content: space-between;
     padding-left: 15%;
     color: rgb(43, 42, 42);
-    width: 40%;
     font-family: 'Noto Sans';
     padding-bottom: 6%; 
     font-size: 18px;
@@ -204,6 +205,23 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
 }
 
+.contenedor-historias{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 90px;
+}
+
+.contenedor-historias div{
+    margin-right: 3px;
+}
+
+.div-historias{
+    width: 200px;
+}
+
+.div-historias img{
+    width: 100%;
+}
 
 /* PRODUCTOS */
 
