@@ -304,11 +304,17 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
 .textoSection2-rump {
     padding-left: 15%;
     color: rgb(43, 42, 42);
-    width: 45%;
+    width: 80%;
     font-family: 'Noto Sans';
     padding-bottom: 6%; 
     font-size: 18px;
 
+}
+
+.contenedor-certificados{
+    padding-top: 50px;
+    margin-right: 150px;
+    margin-bottom: 50px;
 }
 
 .textoSection2-rump p {
@@ -316,6 +322,110 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
     padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
 
 }
+
+.div-img-ministerio{
+    width: 300px;
+}
+
+.div-img-ministerio img{
+    width: 100%;
+}
+
+.div-certificados{
+    width: 500px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.div-certificados:hover{
+    opacity: 0.5;
+}
+
+.div-certificados img{
+    width: 100%;
+}
+
+.contenedor-rump-texto-certificaciones{
+    display: flex;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
 
 /* INTI */
 
