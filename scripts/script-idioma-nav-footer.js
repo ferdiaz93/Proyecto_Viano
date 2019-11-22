@@ -38,8 +38,8 @@ function cambiarIdiomaNavFooter(idioma) {
             MENU_RUMP.innerText = "RUMP Registration Minsitry of Production";
             MENU_INTI.innerText = "Audited Repairman by INTI Legarl Meotology";
             MENU_CONTACTO.innerText = "Contact";
-            MENU_ESPAÑOL.innerText = "Spanish";
-            MENU_INGLES.innerText = "English";
+            MENU_ESPAÑOL.innerText = "esp";
+            MENU_INGLES.innerText = "eng";
 
 
             FOOTER_CONTACTO.innerText = "Contact";
