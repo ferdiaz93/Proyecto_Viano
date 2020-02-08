@@ -1,0 +1,24 @@
+{
+  "name": "proyecto_viano",
+  "version": "1.0.0",
+  "description": "Pagina web para una organizacion orientada a la reparacion de instrumentos de medicion.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferdiaz93/Proyecto_Viano.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ferdiaz93/Proyecto_Viano/issues"
+  },
+  "homepage": "https://github.com/ferdiaz93/Proyecto_Viano#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.2"
+  }
+}
