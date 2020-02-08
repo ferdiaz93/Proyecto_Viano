@@ -1,146 +1,134 @@
 <!doctype html>
 <html lang="en">
 
-<!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../css/style.css">
-  <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
-
-  <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
-
-  <title>Viano</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Viano</title>
 </head>
 
 <body>
-  <nav class="menuNav">
-    <div class="logos">
-      <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
-                Atributos-->
-      <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
-      <img src="../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
-    </div>
+    <nav class="menuNav">
+        <div class="logos">
+            <img src="../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
+        </div>
 
-    <ul class="botonesNav">
-      <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
-      <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
-                PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
-      <li><a id="inicio" href="./home">Inicio</a></li>
-      <li><a id="nuestra-historia" href="./nuestraHistoria">Nuestra Historia</a></li>
-      <li><a id="productos-servicios" href="./productos">Productos y Servicios</a></li>
-      <li><a id="certificaciones" href="./certificaciones">Certificaciones</a>
-        <ul class="subMenu">
-          <li><a id="rump" href="./certifRump">Inscripción RUMP Ministerio de Producción</a></li>
-          <li><a id="inti" href="./certiINTI">Reparador Auditado por Meteología Legal</a></li>
+        <ul class="botonesNav">
+            <li><a id="inicio" href="/">Inicio</a></li>
+            <li><a id="nuestra-historia" href="./nuestrahistoria">Nuestra Historia</a></li>
+            <li><a id="productos-servicios" href="./productos">Productos y Servicios</a></li>
+            <li><a id="certificaciones" href="./certificaciones">Certificaciones</a>
+                <ul class="subMenu">
+                    <li><a id="rump" href="./certifrump">Inscripción RUMP Ministerio de Producción</a></li>
+                    <li><a id="inti" href="./certifinti">Reparador Auditado por Meteología Legal</a></li>
+                </ul>
+            </li>
+            <li><a id="contacto" href="./contacto">Contacto</a></li>
+            <li>
+                <select name="lang" id="selector-idiomas" class="select-css">
+                  <option id="español" value="esp">Español</option>
+                  <option id="ingles" value="eng">Ingles</option>
+                </select>
+            </li>
         </ul>
-      </li>
-      <li><a id="contacto" href="./contacto">Contacto</a></li>
-      <li><select name="lang" id="selector-idiomas" class="select-css">
-          <option id="español" value="esp">Español</option>
-          <option id="ingles" value="eng">Ingles</option>
-        </select>
-      </li>
-    </ul>
 
-    <div class="logo2">
-      <!--el div abarca por default el ancho de la página-->
-      <img src="../img/isologoblanco.png" alt="Logo ISO">
-    </div>
-  </nav>
+        <div class="logo2">
+            <img src="../img/isologoblanco.png" alt="Logo ISO">
+        </div>
+    </nav>
+    <section class="section-general">
 
-  <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
-  <section class="section-general">
+        <div class="textoSection-contacto">
+            <h2>VIANO</h2>
+        </div>
+        <div class="textoSection2-contacto">
+            <p id="direccion">Dirección: Zapiola 1144</p>
+            <p id="partido">San Justo - Partido de la Matanza</p>
+            <p id="provincia">CP 1754- Provincia de Buenos Aires</p>
+            <div class="textoAtencionAlCliente">
+                <h4 id="atencion">Atención al Cliente</h4>
+                <p>Tel: + 54 9 11 3566 4142</p>
+            </div>
+        </div>
 
-    <div class="textoSection-contacto">
-      <h2>VIANO</h2>
-    </div>
-    <div class="textoSection2-contacto">
-      <p id="direccion">Dirección: Zapiola 1144</p>
-      <p id="partido">San Justo - Partido de la Matanza</p>
-      <p id="provincia">CP 1754- Provincia de Buenos Aires</p>
-      <div class="textoAtencionAlCliente">
-        <h4 id="atencion">Atención al Cliente</h4>
-        <p>Tel: + 54 9 11 3566 4142</p>
-      </div>
-    </div>
-
-    <script>
-      function submitEmailForm(form) {
-        var obj = new XMLHttpRequest();
-        obj.onreadystatechange = function(){
-          if(obj.readyState == 4){
-            if(obj.status == 200){
-              var res = JSON.parse(obj.responseText);
-              alert(res.message);
+        <script>
+            function submitEmailForm(form) {
+                var obj = new XMLHttpRequest();
+                obj.onreadystatechange = function() {
+                    if (obj.readyState == 4) {
+                        if (obj.status == 200) {
+                            var res = JSON.parse(obj.responseText);
+                            alert(res.message);
+                        } else {
+                            alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+                        }
+                    }
+                };
+                obj.open("post", form.action, true);
+                obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+                obj.send(JSON.stringify({
+                    name: form.name.value,
+                    email: form.email.value,
+                    message: form.message.value
+                }));
+                return false;
             }
-            else{
-              alert("XMLHttp status " + obj.status + ": " + obj.statusText);
-            }
-          }
-        };
-        obj.open("post", form.action, true);
-        obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-        obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
-        return false;
-      }
-    </script>
+        </script>
 
-    <!--  -->
-    <form class="formulario" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
-      
-      <div class="contenedor-label">
-        <label id="nombre" for="Nombre">Nombre:</label>
-        <input class="input-datos" name="Nombre" type="text" required>
-      </div>
-      
-      <div class="contenedor-label">
-        <label id="email" for="Email">Tu email:</label>
-        <input class="input-datos" type="text" name="Email" required>
-      </div>
-      
-      <div class="contenedor-label">
-        <label id="mensaje" for="Mensaje">Tu Mensaje:</label>
-        <textarea class="input-textarea" name="Mensaje" required></textarea>
-      </div>
+        <!--  -->
+        <form class="formulario" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
 
-      <button class="boton-enviar" type="submit"> Enviar</button>
-    </form>
+            <div class="contenedor-label">
+                <label id="nombre" for="Nombre">Nombre:</label>
+                <input class="input-datos" name="Nombre" type="text" required>
+            </div>
 
-  </section>
+            <div class="contenedor-label">
+                <label id="email" for="Email">Tu email:</label>
+                <input class="input-datos" type="text" name="Email" required>
+            </div>
 
-  <footer class="footer">
+            <div class="contenedor-label">
+                <label id="mensaje" for="Mensaje">Tu Mensaje:</label>
+                <textarea class="input-textarea" name="Mensaje" required></textarea>
+            </div>
 
-    <div class="textoFooter">
-      <h3 id="footer-contacto">
-        Contacto
-      </h3>
-      <p>
-        Tel: + 54 9 11 3566 4142
-      </p>
-    </div>
+            <button class="boton-enviar" type="submit"> Enviar</button>
+        </form>
 
-    <div class="textoFooter">
-      <p>
-        Zapiola 1144, San Justo
-      </p>
-      <p id="footer-partido">
-        Partido de la Matanza
-      </p>
-    </div>
+    </section>
 
-    <div class="textoFooter">
-      <p id="footer-cp">
-        CP 1754- Provincia de Buenos Aires
-      </p>
-    </div>
+    <footer class="footer">
 
-  </footer>
+        <div class="textoFooter">
+            <h3 id="footer-contacto">
+                Contacto
+            </h3>
+            <p>
+                Tel: + 54 9 11 3566 4142
+            </p>
+        </div>
 
-  <script src="../scripts/script-idioma-nav-footer.js"></script>
-  <script src="../scripts/script-idioma-body-contacto.js"></script>
+        <div class="textoFooter">
+            <p>
+                Zapiola 1144, San Justo
+            </p>
+            <p id="footer-partido">
+                Partido de la Matanza
+            </p>
+        </div>
+
+        <div class="textoFooter">
+            <p id="footer-cp">
+                CP 1754- Provincia de Buenos Aires
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="../scripts/script-idioma-nav-footer.js"></script>
+    <script src="../scripts/script-idioma-body-contacto.js"></script>
 </body>
 
 </html>
