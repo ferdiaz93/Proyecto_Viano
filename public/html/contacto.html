@@ -28,16 +28,16 @@
       <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
       <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
                 PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
-      <li><a id="inicio" href="./home.html">Inicio</a></li>
-      <li><a id="nuestra-historia" href="./nuestraHistoria.html">Nuestra Historia</a></li>
-      <li><a id="productos-servicios" href="./productos.html">Productos y Servicios</a></li>
-      <li><a id="certificaciones" href="./certificaciones.html">Certificaciones</a>
+      <li><a id="inicio" href="./home">Inicio</a></li>
+      <li><a id="nuestra-historia" href="./nuestraHistoria">Nuestra Historia</a></li>
+      <li><a id="productos-servicios" href="./productos">Productos y Servicios</a></li>
+      <li><a id="certificaciones" href="./certificaciones">Certificaciones</a>
         <ul class="subMenu">
-          <li><a id="rump" href="./certifRump.html">Inscripción RUMP Ministerio de Producción</a></li>
-          <li><a id="inti" href="./certiINTI.html">Reparador Auditado por Meteología Legal</a></li>
+          <li><a id="rump" href="./certifRump">Inscripción RUMP Ministerio de Producción</a></li>
+          <li><a id="inti" href="./certiINTI">Reparador Auditado por Meteología Legal</a></li>
         </ul>
       </li>
-      <li><a id="contacto" href="./contacto.html">Contacto</a></li>
+      <li><a id="contacto" href="./contacto">Contacto</a></li>
       <li><select name="lang" id="selector-idiomas" class="select-css">
           <option id="español" value="esp">Español</option>
           <option id="ingles" value="eng">Ingles</option>
@@ -67,21 +67,46 @@
       </div>
     </div>
 
-    <!-- EN ACTION SE DEBE PONER EL LINK DADO POR FORMSPREE -->
-    <form class="formulario" action="https://formspree.io/xdooyajv" method="POST">
+    <script>
+      function submitEmailForm(form) {
+        var obj = new XMLHttpRequest();
+        obj.onreadystatechange = function(){
+          if(obj.readyState == 4){
+            if(obj.status == 200){
+              var res = JSON.parse(obj.responseText);
+              alert(res.message);
+            }
+            else{
+              alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+            }
+          }
+        };
+        obj.open("post", form.action, true);
+        obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+        obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+        return false;
+      }
+    </script>
+
+    <!--  -->
+    <form class="formulario" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+      
       <div class="contenedor-label">
         <label id="nombre" for="Nombre">Nombre:</label>
-        <input class="input-datos" name="Nombre" type="text">
+        <input class="input-datos" name="Nombre" type="text" required>
       </div>
+      
       <div class="contenedor-label">
         <label id="email" for="Email">Tu email:</label>
-        <input class="input-datos" type="text" name="Email">
+        <input class="input-datos" type="text" name="Email" required>
       </div>
+      
       <div class="contenedor-label">
         <label id="mensaje" for="Mensaje">Tu Mensaje:</label>
-        <textarea class="input-textarea" name="Mensaje"></textarea>
+        <textarea class="input-textarea" name="Mensaje" required></textarea>
       </div>
-      <input id="enviar" class="boton-enviar" type="submit" value="Enviar">
+
+      <button class="boton-enviar" type="submit"> Enviar</button>
     </form>
 
   </section>
