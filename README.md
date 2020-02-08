@@ -1,7 +1,7 @@
 # Proyecto_Viano
 Pagina web para una organizacion orientada a la reparacion de instrumentos de medicion.
 
-Ejecucion
+### Instalación
 
 ```sh
 $ git clone https://github.com/ferdiaz93/Proyecto_Viano.git 
