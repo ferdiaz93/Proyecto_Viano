@@ -20,8 +20,8 @@ function getAdminTest(req, res) {
 }
 
 function editText(req, res) {
-    if (req) {
-        console.log(req);
+    if (req.body) {
+        console.log(req.body);
         res.send('se recibio una request')
     } else {
         console.log('no se recibio la req')
@@ -31,4 +31,5 @@ function editText(req, res) {
 module.exports = {
     getAdmin: getAdmin,
     getAdminTest: getAdminTest,
+    editText: editText
 }

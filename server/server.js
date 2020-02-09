@@ -3,6 +3,8 @@ const app = express();
 const nodemailer = require("nodemailer");
 const path = require("path");
 const fs = require("fs");
+const bodyParser = require('body-parser');
+
 const HomeController = require("./controllers/homeController");
 const OurHistoryController = require("./controllers/ourhistoryController");
 const ProductsAndServicesController = require("./controllers/productsandservicesController");
@@ -12,7 +14,7 @@ const ContactoController = require("./controllers/contactController");
 const AdminController = require("./controllers/adminController");
 
 
-
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "../public")));
 
 app.get("/", HomeController.getHome);
