@@ -52,46 +52,22 @@
             </div>
         </div>
 
-        <script>
-            function submitEmailForm(form) {
-                var obj = new XMLHttpRequest();
-                obj.onreadystatechange = function() {
-                    if (obj.readyState == 4) {
-                        if (obj.status == 200) {
-                            var res = JSON.parse(obj.responseText);
-                            alert(res.message);
-                        } else {
-                            alert("XMLHttp status " + obj.status + ": " + obj.statusText);
-                        }
-                    }
-                };
-                obj.open("post", form.action, true);
-                obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-                obj.send(JSON.stringify({
-                    name: form.name.value,
-                    email: form.email.value,
-                    message: form.message.value
-                }));
-                return false;
-            }
-        </script>
-
         <!--  -->
-        <form class="formulario" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
+        <form class="formulario" id="formContact">
 
             <div class="contenedor-label">
                 <label id="nombre" for="Nombre">Nombre:</label>
-                <input class="input-datos" name="Nombre" type="text" required>
+                <input id="inputName" class="input-datos" name="Nombre" type="text" required>
             </div>
 
             <div class="contenedor-label">
                 <label id="email" for="Email">Tu email:</label>
-                <input class="input-datos" type="text" name="Email" required>
+                <input id="inputEmail" class="input-datos" type="text" name="Email" required>
             </div>
 
             <div class="contenedor-label">
                 <label id="mensaje" for="Mensaje">Tu Mensaje:</label>
-                <textarea class="input-textarea" name="Mensaje" required></textarea>
+                <textarea id="inputMessage" class="input-textarea" name="Mensaje" required></textarea>
             </div>
 
             <button class="boton-enviar" type="submit"> Enviar</button>
@@ -126,7 +102,7 @@
         </div>
 
     </footer>
-
+    <script src="../scripts/script-form.js"></script>
     <script src="../scripts/script-idioma-nav-footer.js"></script>
     <script src="../scripts/script-idioma-body-contacto.js"></script>
 </body>
