@@ -8,6 +8,7 @@
 /* font-family: 'Oswald', sans-serif; */
 
 * {
+    box-sizing: border-box;
     padding: 0;
     /* espacio entre el contenido y el contenedor*/
     margin: 0;
@@ -17,7 +18,7 @@
 body {
     background-image: url('../img/fondoViano.jpg');
     background-position: center;
-    background-size: 100% 100%;
+    background-size: auto;
     background-attachment: fixed;
     /*scroll de la imagen*/
 }
@@ -93,6 +94,7 @@ El TAMAÑO SE LE CAMBIA EN EN EL CONTENEDOR (ej: .logos) */
 }
 
 .textoSection {
+    width: 100%;
     color: white;
     padding: 5%;
     height: auto;
@@ -835,11 +837,7 @@ button {
   .card:nth-of-type(5) .image-container {
     background-image: url("../img/7\ Carrusel.jpg")
   }
-  
 
-  
-  
-  
   .image-container {
     width: 100%;
     height: 100%;
@@ -857,4 +855,10 @@ button {
     position: absolute;
     top: calc(-10% - 3px);
     left: calc(-10% - 3px);
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+        background-image: url('../img/background-mobile.jpeg');
+    }
   }

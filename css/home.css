@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; TIPOGRAFÍA: RALEWAY */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400&display=swap');
+/*font-family: 'Oswald', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.section-home {
+    background-image: url('../img/fondoViano.jpg');
+    background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+.logos {
+    width: 20%;
+}
+
+.logo2 {
+    width: 20%;
+}
+
+.logoSection {
+    width: 50%;
+}
+
+.menuNav {
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.botonesNav {
+    flex-grow: 2;
+    justify-content: center;
+    padding: 2%;
+    flex-grow: 2;
+    list-style: none;
+}
+
+.botonesNav li {
+    margin: 2%;
+}
+
+.botonesNav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.menuNav ul {
+    list-style: none;
+}
+
+.subMenu {
+    position: absolute;
+    background-color: navy;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.subMenu li a {
+    display: block;
+    font-size: 13px;
+}
+
+.botonesNav li:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*
+.section-home {
+    width: 100%;
+}
+*/
+.footer {
+    background-color: navy;
+    width: 100%;
+    padding-bottom: 1%;
+    /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 1%;
+    /* Arriba. espacio entre el contenido y el contenedor*/
+}
+
+.textoFooter {
+    color: white;
+    padding: 1%;
+    height: auto;
+    padding-left: 5%;
+    /*se corre a la derecha*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+}
+
