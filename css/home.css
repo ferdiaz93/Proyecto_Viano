@@ -59,7 +59,7 @@
 .section-home {
     background-image: url('../img/fondoViano.jpg');
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-attachment: fixed;
 }
 
