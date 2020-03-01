@@ -23,15 +23,16 @@ function cambiarIdiomaBody(idioma) {
         case "eng":
             BODY_NUESTRA.innerText = "About";
             BODY_HISTORIA.innerText = "Us";
-            BODY_PARRAFO_1.innerText = language.eng.aboutAs.paragraph1;
-            BODY_PARRAFO_2.innerText = language.eng.aboutAs.paragraph2;
-            BODY_PARRAFO_3.innerText = language.eng.aboutAs.paragraph3;
+            BODY_PARRAFO_1.innerText = "We are a young organization headed by two partners, which combines knowledge in quality systems and the repair of measuring instruments.Updating in ISO 9001, 17025, 14001, 45001 quality standards, among others. ";
+            BODY_PARRAFO_2.innerText = "We have extensive experience in the main automotive companies and factories of measuring instruments. In addition to extensive knowledge in robotics and measuring machines.";
+            BODY_PARRAFO_3.innerText = "The development of capacity measures is a combination of Design, Sustainability and Professional Development of Us.";
             break;
+
         case "esp":
             BODY_NUESTRA.innerText = "Nuestra";
             BODY_HISTORIA.innerText = "Historia";
-            BODY_PARRAFO_1.innerText = language.esp.aboutAs.paragraph1
-            BODY_PARRAFO_2.innerText = language.esp.aboutAs.paragraph2
-            BODY_PARRAFO_3.innerText = language.esp.aboutAs.paragraph3
+            BODY_PARRAFO_1.innerText = "Somos una organización joven encabezada por dos socios, combinando conocimientos en sistemas de calidad y reparación de instrumentos de medición.  Actualizándonos en normas de calidad Iso 9001, 17025, 14001, 45001, entre otras";
+            BODY_PARRAFO_2.innerText = "Contamos con amplia trayectoria en empresas líderes automotrices y fábricas de instrumentos de medición. Además de amplíos conocimientos en robótica y en máquinas de medir.";
+            BODY_PARRAFO_3.innerText = "El desarrollo de las medidas de capacidad es una combinación de Diseño, Sustentabilidad y desarrollo profesional de Nosotros. ";
     }
 }

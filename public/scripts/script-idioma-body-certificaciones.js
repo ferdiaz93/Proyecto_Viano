@@ -26,7 +26,7 @@ function cambiarIdiomaBodyCertificaciones(idioma) {
             BODY_INSCRIPCION.innerText = "RUMP Inscription";
             BODY_MINISTERIO.innerText = "Production Ministry";
             BODY_REPARADOR.innerText = "Auditer Repairman";
-            BODY_METEOLOGIA.innerText = "by legal Meteology INTI";
+            BODY_METEOLOGIA.innerText = "by legal Metrology INTI";
             break;
 
         case "esp":
@@ -34,6 +34,6 @@ function cambiarIdiomaBodyCertificaciones(idioma) {
             BODY_INSCRIPCION.innerText = "Inscripcion RUMP";
             BODY_MINISTERIO.innerText = "Ministerio de Produccion";
             BODY_REPARADOR.innerText = "Reparador Auditado";
-            BODY_METEOLOGIA.innerText = "por Meteologia legal INTI";
+            BODY_METEOLOGIA.innerText = "por Metrologia legal INTI";
     }
 }
