@@ -6,35 +6,31 @@ let pathAdmin = path.join(__dirname,"../../public/login.html");
 res.sendFile(pathAdmin);
 }
 
-const credential={
+const credential = {
     user: "alan",
     password: "pato"
 }
 
-function getAdminTest(req, res){
-    if (req.query.user== credential.user && req.query.password==credential.password){
+function getAdminTest(req, res) {
+    if (req.query.user == credential.user && req.query.password == credential.password) {
         console.log(req.query)
         res.send("llego");
-    }
-    else{
+    } else {
         res.send("No llego nada");
-    }  
+    }
 }
 
-
-function postReplace(req, res){
-    console.log('test')
-    fs.writeFile('./server/helloworld.txt', 'pato!', function(err){
-        if(err) {
-            return console.log(err);
-        }
-        console.log("OK!"); 
-    })
-
+function editText(req, res) {
+    if (req.body) {
+        console.log(req.body);
+        res.send('se recibio una request')
+    } else {
+        console.log('no se recibio la req')
+    }
 }
 
-module.exports ={
-    getAdmin : getAdmin,
-    getAdminTest :getAdminTest,
-    postReplace : postReplace,
+module.exports = {
+    getAdmin: getAdmin,
+    getAdminTest: getAdminTest,
+    editText: editText
 }
