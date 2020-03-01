@@ -1,8 +1,8 @@
 const path = require("path");
 
-function getAdmin(req, res) {
-    let pathAdmin = path.join(__dirname, "../../public/html/login.html");
-    res.sendFile(pathAdmin);
+function getAdmin(req, res){
+let pathAdmin = path.join(__dirname,"../../public/login.html");
+res.sendFile(pathAdmin);
 }
 
 const credential = {

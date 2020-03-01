@@ -1,0 +1,29 @@
+.section-general {
+    background-color: white;
+}
+
+.textoSection-historia {
+    color: #000769;
+    padding: 3%;
+    height: auto;
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+}
+
+.textoSection-historia p {
+    color: #000769;
+    font-size: 53px;
+    font-weight: lighter;
+}
+
+.textoSection2-historia {
+    display: flex;
+    color: rgb(43, 42, 42);
+    text-align: justify;
+    font-family: 'Noto Sans';
+    font-size: 17px;
+}
+
+.div-historias img:hover {
+	opacity: 0.40;
+}

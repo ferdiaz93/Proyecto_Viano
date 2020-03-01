@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; TIPOGRAFÍA: RALEWAY */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:400&display=swap');
+/*font-family: 'Oswald', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* 
+.logo_viano_body {
+    width: 40%;
+}
+
+.menuNav {
+    background-color: navy;
+    margin-right: 0px !important;
+    align-items: center;
+}
+
+.botonesNav {
+    justify-content: center;
+}
+.menuNav ul {
+    list-style: none;
+}
+.botonesNav li {
+    margin: 2%;
+}
+
+.botonesNav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.footer {
+    background-color: navy;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.textoFooter {
+    color: white;
+    padding: 1%;
+    height: auto;
+    padding-left: 5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+} */
+
+.section-home {
+    background-image: url('../img/fondoViano.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.textoSection p {
+    color: navy;
+    text-shadow: 1px 1px 8px white;
+    letter-spacing: 2px;
+    margin-left: 7px;
+    font-size: 24px;
+    font-family: oswald-extralight,oswald,sans-serif;
+}
+
+.textoSection h2 {
+    font-family: oswald-extralight,oswald,sans-serif;
+    color:white;
+    letter-spacing: 2px;
+}

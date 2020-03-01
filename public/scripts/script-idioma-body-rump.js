@@ -23,13 +23,13 @@ function cambiarIdiomaBodyRump(idioma) {
         case "eng":
             BODY_INSCRIPCION.innerText = "RUMP Registration";
             BODY_MINISTERIO.innerText = "Ministry of Production";
-            BODY_PARRAFO.innerText = language.eng.certifRump.paragraph1;
+            BODY_PARRAFO.innerText = "Viano, Measurement of capacity is registered as supplier repairman and asmanufacturer and repairer of capacity measurements under the number of R.U.M.P. RL-2018 according to the requirements established by the Ministry of Production of the Argentine Republic.";
             break;
 
         case "esp":
             BODY_INSCRIPCION.innerText = "Inscripción RUMP";
             BODY_MINISTERIO.innerText = "Ministerio de Producción";
-            BODY_PARRAFO.innerText = language.esp.certifRump.paragraph1;
+            BODY_PARRAFO.innerText = "Viano, Medida de capacidad se encuentra inscripto como reparador de surtidores y como fabricante y reparador de medidas de capacidad bajo el número de R.U.M.P. RL-2018 -56297198-APN-MPYT de acuerdo a los requisitos establecidos por el Ministerio de Producción de la República Argentina.  ";
     }
 }
 
@@ -40,13 +40,13 @@ var img1 = document.getElementById("certificado1");
 var img2 = document.getElementById("certificado2");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img1.onclick = function() {
+img1.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
 
-img2.onclick = function() {
+img2.onclick = function () {
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
@@ -56,6 +56,6 @@ img2.onclick = function() {
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
