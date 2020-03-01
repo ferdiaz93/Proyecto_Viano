@@ -2,7 +2,7 @@ const path = require("path");
 const nodemailer = require("nodemailer");
  
 function getContact(req,res){
-    let pathContact = path.join(__dirname,"../../public/html/contacto.html");
+    let pathContact = path.join(__dirname,"../../public/contacto.html");
 res.sendFile(pathContact);
 }
 
