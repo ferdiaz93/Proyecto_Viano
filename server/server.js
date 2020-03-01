@@ -8,7 +8,6 @@ const ProductsAndServicesController = require("./controllers/productsandservices
 const CertificatesController =require("./controllers/certificatesController");
 const ContactoController = require("./controllers/contactController");
 
-const TestReaplace = require("./controllers/testReaplace")
 // const bodyParser = require("body-parser");
 const AdminController = require("./controllers/adminController");
 
@@ -31,11 +30,11 @@ app.get("/contacto", ContactoController.getContact);
 app.get("/adminlogin", AdminController.getAdmin);
 app.get("/admintest", AdminController.getAdminTest);
 
-app.post("/sendmail", ContactoController.sendMail);
-app.post("/testReaplace", TestReaplace.postReaplace);
-     
-    
+app.post("/testreaplace", AdminController.postReplace);
 
+app.post("/sendmail", ContactoController.sendMail);
+
+     
 
 app.listen(5500, function(){
     console.log("Puerto 5500 habilitado");

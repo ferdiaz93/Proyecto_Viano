@@ -1,3 +1,4 @@
+const fs = require("fs");
 const path = require("path");
 
 function getAdmin(req, res){
@@ -20,7 +21,20 @@ function getAdminTest(req, res){
     }  
 }
 
+
+function postReplace(req, res){
+    console.log('test')
+    fs.writeFile('./server/helloworld.txt', 'pato!', function(err){
+        if(err) {
+            return console.log(err);
+        }
+        console.log("OK!"); 
+    })
+
+}
+
 module.exports ={
     getAdmin : getAdmin,
     getAdminTest :getAdminTest,
+    postReplace : postReplace,
 }
