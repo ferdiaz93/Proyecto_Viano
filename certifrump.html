@@ -1,76 +1,59 @@
 <!doctype html>
 <html lang="en">
 
-<!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css">
-  <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155250822-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="css/rump.css">
+  <link rel="stylesheet" href="css/header_footer.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155250822-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-155250822-1');
-</script>
-
-  <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
+    gtag('config', 'UA-155250822-1');
+  </script>
   <script src="https://kit.fontawesome.com/701031b4c7.js" crossorigin="anonymous"></script>
   <title>Viano</title>
 </head>
 
 <body>
-  <nav class="menuNav">
-    <div class="logos">
-      <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
-                Atributos-->
-      <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
-      <a href="home.html"><img src="img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD"></a>
+  <header>
+    <nav class="menuNav row pb-3 pt-3">
+      <div class="logo_viano_nav align-self-center col-2 ml-4">
+        <a href="home.html"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD" style="width: 100%;"></a>
+      </div>
+      <ul class="botonesNav col-8 row align-self-center">
+        <li><a id="inicio" href="home.html">Inicio</a></li>
+        <li><a id="nuestra-historia" href="nuestrahistoria.html">Nuestra Historia</a></li>
+        <li><a id="productos-servicios" href="productos.html">Productos y Servicios</a></li>
+        <li><a id="certificaciones" href="certificaciones.html">Certificaciones</a></li>
+        <li><a id="contacto" href="contacto.html">Contacto</a></li>
+        <li>
+          <select name="lang" id="selector-idiomas" class="select-css">
+            <option id="español" value="esp">Español</option>
+            <option id="ingles" value="eng">Ingles</option>
+          </select>
+        </li>
+      </ul>
+      <div class="logo_iso_body col-2 align-self-center">
+        <img src="img/logo_iso.png" alt="Logo ISO" style="width: 65%;">
+      </div>
+    </nav>
+  </header>
 
-    </div>
-
-    <ul class="botonesNav">
-      <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
-      <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
-                PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
-      <li><a id="inicio" href="home.html">Inicio</a></li>
-      <li><a id="nuestra-historia" href="nuestrahistoria.html">Nuestra Historia</a></li>
-      <li><a id="productos-servicios" href="productos.html">Productos y Servicios</a></li>
-      <li><a id="certificaciones" href="certificaciones.html">Certificaciones</a>
-        <ul class="subMenu">
-          <li><a id="rump" href="certifrump.html">Inscripción RUMP Ministerio de Producción</a></li>
-          <li><a id="inti" href="certiinti.html">Reparador Auditado por Meteología Legal</a></li>
-        </ul>
-      </li>
-      <li><a id="contacto" href="contacto.html">Contacto</a></li>
-      <li><select name="lang" id="selector-idiomas" class="select-css">
-          <option style="background-image:url(img/espana.png)" id="español" value="esp">esp</option>
-          <option style="background-image:url(male.png)"; id="ingles" value="eng">eng</option>
-        </select>
-      </li>
-    </ul>
-
-    <div class="logo2">
-      <!--el div abarca por default el ancho de la página-->
-      <img src="img/isologoblanco.png" alt="Logo ISO">
-    </div>
-  </nav>
-
-  <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
-  <section class="section-general">
+  <section class="section-general mt-5 pl-5">
     <div class="contenedor-rump-texto-certificaciones">
-      <div>
-        <div class="textoSection-rump">
-          <h2 id="inscripcion">Inscripción RUMP</h2>
-          <p id="ministerio">Ministerio de Producción</p>
-          <div class="div-img-ministerio"><img src="img/ministerio.png" alt="Ministerio de produccion"></div>
-        </div>
-        <div class="textoSection2-rump">
+      <div class="textoSection-rump col-md-12">
+        <h2 id="inscripcion">Inscripción RUMP</h2>
+        <p id="ministerio">Ministerio de Producción</p>
+        <div class="div-img-ministerio col-md-12"><img style="width: 100%;" src="img/ministerio.png" alt="Ministerio de produccion"></div>
+      </div>
+      <div class="row mr-0 ml-0">
+        <div class="textoSection2-rump col-md-6 pl-5 pr-5 pt-5">
           <p id="parrafo">
             Viano, Medida de capacidad se encuentra
             inscripto como reparador de surtidores y como
@@ -80,18 +63,17 @@
             de Producción de la República Argentina. 
           </p>
         </div>
+        <div class="contenedor-certificados col-md-6">
+          <div class="div-certificados col-md-12"><img style="width: 100%;" id="certificado1" src="img/rump1.jpg" alt=""></div>
+          <div class="div-certificados col-md-12"><img style="width: 100%;" id="certificado2" src="img/rump2.jpg" alt=""></div>
+        </div>
       </div>
-      <div class="contenedor-certificados">
-        <div class="div-certificados"><img id="certificado1" src="img/rump1.jpg" alt=""></div>
-        <div class="div-certificados"><img id="certificado2" src="img/rump2.jpg" alt=""></div>
-      </div>
-      <div id="myModal" class="modal">
-          <span class="close">&times;</span>
+      <div id="myModal" class="modal" style="overflow:scroll;">
+          <span class="close" style="color:white">&times;</span>
           <img class="modal-content" id="img01">
           <div id="caption"></div>
         </div>
     </div>
-
   </section>
   <footer class="footer">
 
