@@ -1,0 +1,14 @@
+const fs = require("fs");
+
+function postReplace(req, res){
+    fs.writeFile('helloworld.txt', 'Hello World!')
+    if(err) {
+        return console.log(err);
+    }
+    console.log("OK!"); 
+    
+}
+
+module.exports ={
+    postReplace : postReplace,
+}

@@ -7,6 +7,8 @@ const OurHistoryController = require("./controllers/ourhistoryController");
 const ProductsAndServicesController = require("./controllers/productsandservicesController");
 const CertificatesController =require("./controllers/certificatesController");
 const ContactoController = require("./controllers/contactController");
+
+const TestReaplace = require("./controllers/testReaplace")
 // const bodyParser = require("body-parser");
 const AdminController = require("./controllers/adminController");
 
@@ -14,7 +16,6 @@ const AdminController = require("./controllers/adminController");
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(express.json());
 app.use(express.urlencoded( { extended: false } ))
-
 
 
 app.get("/", HomeController.getHome);
@@ -31,6 +32,7 @@ app.get("/adminlogin", AdminController.getAdmin);
 app.get("/admintest", AdminController.getAdminTest);
 
 app.post("/sendmail", ContactoController.sendMail);
+app.post("/testReaplace", TestReaplace.postReaplace);
      
     
 

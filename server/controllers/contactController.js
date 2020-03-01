@@ -14,7 +14,7 @@ function sendMail(req, res) {
           secure: true,
           auth: {
               user: "monicaterceros022@gmail.com", // Email emisor
-              pass: "welcomenhk91" // Pass email emisor
+              pass: "patitorrr" // Pass email emisor
           }
       });
   
@@ -22,7 +22,7 @@ function sendMail(req, res) {
       var htmlBody = `<h2>Testing</h2><p>from: ${req.body.Nombre} <a href="mailto:${req.body.Email}">${req.body.Email}</a></p><p>${req.body.Mensaje}</p>`;
       var mail = {
           from: "monicaterceros022@gmail.com", // email emisor
-          to: "fernandodiaz1209@gmail.com", // lista de emails receptores, pueden ser varios(separar con comas)
+          to: "alant.escudero@outlook.com.ar", // lista de emails receptores, pueden ser varios(separar con comas)
           subject: "Testing Mail :v", // Asunto email
           text: textBody,
           html: htmlBody
