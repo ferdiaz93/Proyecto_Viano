@@ -36,7 +36,7 @@ function cambiarIdiomaNavFooter(idioma) {
             MENU_PRODUCTOS.innerText = "Products and Services";
             MENU_CERTIFICACIONES.innerText = "Certifications"
             MENU_RUMP.innerText = "RUMP Registration Minsitry of Production";
-            MENU_INTI.innerText = "Audited Repairman by INTI Legarl Meotology";
+            MENU_INTI.innerText = "Audited Repairman by INTI Legarl Metrology";
             MENU_CONTACTO.innerText = "Contact";
             MENU_ESPAÑOL.innerText = "esp";
             MENU_INGLES.innerText = "eng";
@@ -54,7 +54,7 @@ function cambiarIdiomaNavFooter(idioma) {
             MENU_PRODUCTOS.innerText = "Productos y Servicios";
             MENU_CERTIFICACIONES.innerText = "Certificaciones"
             MENU_RUMP.innerText = "Inscripción RUMP Ministerio de Producción";
-            MENU_INTI.innerText = "Reparador Auditado por Meteología Legal";
+            MENU_INTI.innerText = "Reparador Auditado por Metrología Legal";
             MENU_CONTACTO.innerText = "Contacto";
 
             FOOTER_CONTACTO.innerText = "Contacto";
