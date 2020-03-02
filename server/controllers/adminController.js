@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-function getAdmin(req, res){
-let pathAdmin = path.join(__dirname,"../../public/login.html");
-res.sendFile(pathAdmin);
+function getAdmin(req, res) {
+    let pathAdmin = path.join(__dirname, "../../public/login.html");
+    res.sendFile(pathAdmin);
 }
 
 const credential = {
@@ -21,16 +21,22 @@ function getAdminTest(req, res) {
 }
 
 function editText(req, res) {
-    if (req.body) {
-        console.log(req.body);
-        res.send('se recibio una request')
-    } else {
-        console.log('no se recibio la req')
+    let modif = req.body.lang;
+
+    if (modif = !undefined) {
+        fs.writeFile("./test.txt", modif, function (err) {
+            if (err) {
+                return console.log(err);
+            }
+            console.log("Archivo modificado!");
+        });
+    }else{
+        console.log("Verificar Datos");
     }
 }
 
 module.exports = {
     getAdmin: getAdmin,
     getAdminTest: getAdminTest,
-    editText: editText
+    editText: editText,
 }
