@@ -8,7 +8,6 @@
 /* font-family: 'Oswald', sans-serif; */
 
 /* navegador hamburguesa */
-
 .fa-1x {
 	font-size: 1.5rem;
 	}
@@ -18,6 +17,7 @@
 	.dark-teal-text {
 	color: rgb(250, 249, 249);
 	}
+
 	
 /*fin navegador hamburguesa*/	
 
@@ -95,3 +95,15 @@
 	/* icon size, then gradient */
 	background-size: .65em auto, 100%;
 }
+@media only screen and (max-width: 600px) {
+	.menuNav {
+	  background-color: rgb(216, 52, 66);
+	  display: none !important;
+	}
+  }
+@media only screen and (min-width: 599px) {
+	.navbar {
+	  background-color: rgb(216, 52, 66);
+	  display: none !important;
+	}
+  }
