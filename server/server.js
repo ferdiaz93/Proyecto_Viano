@@ -28,8 +28,9 @@ app.get("/certifinti", CertificatesController.getCertificateINTI);
 app.get("/contacto", ContactoController.getContact);
 app.get("/adminlogin", AdminController.getAdmin);
 app.get("/admintest", AdminController.getAdminTest);
+app.get("/read", AdminController.readText);
 
-app.post('/edit', AdminController.editText);
+app.post("/edit", AdminController.editText);
 app.post("/sendmail", ContactoController.sendMail);
 
 app.listen(5500, function() {

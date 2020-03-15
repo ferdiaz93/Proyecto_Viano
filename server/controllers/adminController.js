@@ -20,11 +20,21 @@ function getAdminTest(req, res) {
     }
 }
 
+function readText(req, res){
+    res.send(fs.readFile("test.json", "utf8", function (err, jsonString){
+        if (err) {
+            return console.log("Falló:", err)
+            
+        }
+        console.log('Datos:', jsonString) 
+    }))
+}
+
 function editText(req, res) {
     let modif = req.body.lang;
 
-    if (modif = !undefined) {
-        fs.writeFile("./test.txt", modif, function (err) {
+    if (modif !== undefined) {
+        fs.writeFile("test.json", modif, function (err) {
             if (err) {
                 return console.log(err);
             }
@@ -38,5 +48,6 @@ function editText(req, res) {
 module.exports = {
     getAdmin: getAdmin,
     getAdminTest: getAdminTest,
+    readText: readText,
     editText: editText,
 }
