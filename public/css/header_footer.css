@@ -7,7 +7,19 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
 /* font-family: 'Oswald', sans-serif; */
 
+/* navegador hamburguesa */
 
+.fa-1x {
+	font-size: 1.5rem;
+	}
+	.navbar-toggler.toggler-example {
+	cursor: pointer;
+	}
+	.dark-teal-text {
+	color: rgb(250, 249, 249);
+	}
+	
+/*fin navegador hamburguesa*/	
 
 .logo_viano_body {
     width: 40%;
