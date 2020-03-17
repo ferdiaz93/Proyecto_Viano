@@ -1,30 +1,23 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/header_footer.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155250822-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-155250822-1');
-  </script>
-  <script src="https://kit.fontawesome.com/701031b4c7.js" crossorigin="anonymous"></script>
   <title>Viano</title>
 </head>
 
 <body>
   <header>
+    <!--menu-->    
     <nav class="menuNav row pb-3 pt-3">
       <div class="logo_viano_nav align-self-center col-2 ml-4">
-        <a href="home.html"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD" style="width: 100%;"></a>
+        <a href="home.html"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD"
+          style="width: 100%;"></a>
       </div>
       <ul class="botonesNav col-8 row align-self-center">
         <li><a id="inicio" href="home.html">Inicio</a></li>
@@ -43,103 +36,123 @@
         <img src="img/logo_iso.png" alt="Logo ISO" style="width: 65%;">
       </div>
     </nav>
+<!--end menu-->
 
-      <!--Navbar-->
-    <nav class="navbar navbar navbar-dark" style="background-color: navy;">
-
-      <!-- Navbar brand
-      <a class="navbar-brand" href="#"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD" style="width: 10%;"> <img src="img/logo_iso.png" alt="Logo ISO" style="width: 5%;"></a>--> 
-
-      <!-- Collapse button -->
-        
-      <div class="logo_iso_body col-2 align-self-center">
+<!--hamburger menu-->
+    <nav class="navbar navbar-dark row align-items-center" style="background-color: navy;">
+      
+      <!--div class="logo_iso_hamburger col-2">
         <img src="img/logo_iso.png" alt="Logo ISO" style="width: 100%;">
-      </div>
-      <div class="logo_viano_nav align-self-center col-2">
-        <a href="home.html"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD" style="width: 150%;"></a>
-      </div>
-      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-                  class="fas fa-bars fa-1x"></i></span></button>  
+          </div-->
 
-      <!-- Collapsible content -->
+      <!--♥Decidi sacar el logo de la certificacion porque no veo forma de centrar el de VIANO. Esta comentado por si quieren que averiguemos entre todos como se puede hacer o si quieren ver ustedes como hacer.
+          ♥ Probe poniendo el menu a la derecha para que la diferencia no se note, pero igual queda feo. 
+          ♥Trate de organizar un poco este html y header_footer.css, lo mas probable es que las lineas esten mal pero al menos con los comentarios queda mas claro(?-->
+      
+      <div class="logo_viano_hamburger col-2">
+        <a href="home.html"><img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD" style="width: 155%;"></a>
+          </div>
+
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto" style="text-align: center;">
+        
+        <ul class="navbar-nav mr-auto" style="text-align:center;">
           <li class="nav-item active">
-            <a class="nav-link" href="home.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
+            <a class="nav-link" href="home.html">Inicio <span class="sr-only">(current)</span></a></li>
           <li class="nav-item">
-            <a class="nav-link" href="nuestrahistoria.html">Nuestra historia</a>
-          </li>
+            <a class="nav-link" href="nuestrahistoria.html">Nuestra historia</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="productos.html">Productos y servicios</a>
-          </li>
+            <a class="nav-link" href="productos.html">Productos y servicios</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="certificaciones.html">Certificaciones</a>
-          </li>
+            <a class="nav-link" href="certificaciones.html">Certificaciones</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="contactos.html">Contactos</a>
-          </li>
+            <a class="nav-link" href="contactos.html">Contactos</a></li>
         </ul>
-        <!-- Links -->
 
       </div>
-      <!-- Collapsible content -->
 
     </nav>
-    <!--/.Navbar-->
-    
-  </header>
+<!--end hamburger menu-->
+</header>
+<!--body content-->  
 
-  <section class="section-home pl-5 pt-5 pb-5">
-    <div class="textoSection">
-        <div class="logo_viano_body">
-          <img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD">
-        </div>
-        <p id="asesoramiento">Asesoramiento de normas de calidad ISO</p>
-        <h2 id="fabricacion">Fabricación,</h2>
-        <h2 id="calibracion">Calibración y Reparación</h2>
-        <h2 id="medidas">de Medidas</h2>
-        <h2>de Capacidad</h2>
+<section class="section-home pl-5 pt-5 pb-5">
+
+  <div class="textoSection">
+    <div class="logo_viano_body">
+      <img src="img/homelogovianosvg.svg" alt="VIANO, MEDIDAS DE CAPACIDAD">
     </div>
-  </section>
+    <p id="asesoramiento">Asesoramiento de normas de calidad ISO</p>
+    <h2 id="fabricacion">Fabricación,</h2>
+    <h2 id="calibracion">Calibración y Reparación</h2>
+      <h2 id="medidas">de Medidas</h2>
+      <h2>de Capacidad</h2>
+    </div>
 
-  <footer class="footer">
-
+</section>
+  <!--end body content-->
+  
+<!--footer-->
+<footer class="footer">
+  
     <div class="textoFooter">
       <h3 id="footer-contacto">
         Contacto
       </h3>
       <p>
-          <i class="fab fa-whatsapp"></i>  Tel: + 54 9 11 3566 4142 <br>
-          <i class="far fa-envelope"></i> vianomedidasdecapacidad@gmail.com
+        <i class="fab fa-whatsapp"></i> Tel: + 54 9 11 3566 4142 <br>
+        <i class="far fa-envelope"></i> vianomedidasdecapacidad@gmail.com
       </p>
     </div>
-
+    
     <div class="textoFooter">
       <p>
         Zapiola 1144, San Justo
       </p>
       <p id="footer-partido">
-        Partido de la Matanza
+        Partido de La Matanza
       </p>
     </div>
-
+    
     <div class="textoFooter">
       <p id="footer-cp">
         CP 1754- Provincia de Buenos Aires
       </p>
-    </div>
-
+    </div>   
   </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--end footer-->
   
-  <script src="scripts/script-idioma-nav-footer.js"></script>
-  <script src="scripts/script-body-home.js"></script>
+<!--script-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155250822-1"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-155250822-1');
+</script>
+
+<script src="https://kit.fontawesome.com/701031b4c7.js" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+
+<script src="scripts/script-idioma-nav-footer.js"></script>
+
+<script src="scripts/script-body-home.js"></script>
+<!--end script-->  
 
 </body>
 
