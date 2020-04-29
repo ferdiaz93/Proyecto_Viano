@@ -21,16 +21,20 @@ function getAdminTest(req, res) {
 }
 
 function readText(req, res){
-    res.send(fs.readFile("test.json", "utf8", function (err, jsonString){
+    
+    fs.readFile("test.json", "utf8", function (err, data){
         if (err) {
             return console.log("Falló:", err)
             
         }
-        console.log('Datos:', jsonString) 
-    }))
+        console.log('El dato solicitado es:', JSON.parse(data).esp.aboutAs.paragraph1) 
+        let paragraphbase = JSON.parse(data).esp.aboutAs.paragraph1
+        res.send(paragraphbase)
+    })
 }
 
 function editText(req, res) {
+    
     let modif = req.body.lang;
 
     if (modif !== undefined) {
