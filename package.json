@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/ferdiaz93/Proyecto_Viano#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemailer": "^6.4.2"
   }
 }
